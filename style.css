@@ -1,0 +1,301 @@
+/* =========================
+   PEDRI UNIVERSE - STYLE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b16;
+    color: white;
+}
+
+
+/* NAVIGATION */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+
+nav h1 {
+    font-size: 25px;
+    color: #ffcc00;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+
+/* HERO */
+
+.hero {
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.8)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/");
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.hero-text {
+
+    animation: apparition 1.5s;
+
+}
+
+
+.hero h2 {
+
+    font-size: 55px;
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+
+}
+
+
+button {
+
+    margin-top: 30px;
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #ffcc00;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+
+/* SECTIONS */
+
+
+.section {
+
+    padding: 100px 10%;
+
+}
+
+
+.section h2 {
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+/* CARTES */
+
+
+.card {
+
+    background:#151526;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    margin-top:30px;
+
+    box-shadow:0 0 25px rgba(255,255,255,0.1);
+
+}
+
+
+
+.card li {
+
+    margin:15px;
+
+}
+
+
+
+/* TIMELINE */
+
+
+.timeline {
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+
+
+.event {
+
+    background:#151526;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    transition:0.4s;
+
+}
+
+
+
+.event:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px #ffcc00;
+
+}
+
+
+
+
+/* ANIMATIONS */
+
+
+.reveal {
+
+    animation: apparition 1s;
+
+}
+
+
+
+@keyframes apparition {
+
+from {
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to {
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+
+nav {
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+nav ul {
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+.hero h2 {
+
+font-size:35px;
+
+}
+
+
+.section h2 {
+
+font-size:30px;
+
+}
+
+
+}
